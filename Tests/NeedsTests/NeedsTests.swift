@@ -10,14 +10,56 @@ import Foundation
 import XCTest
 import Needs
 
+#if canImport(UIKit)
+
+import UIKit
+
+final class View: UIView {
+    
+    @Needs(.layout, .display)
+    var progress: CGFloat = 0
+    
+    var setNeedsDisplayCount: Int = 0
+    
+    override func setNeedsDisplay() {
+        super.setNeedsDisplay()
+        setNeedsDisplayCount += 1
+    }
+}
+
+#elseif canImport(AppKit)
+
+final class View: NSView {
+    
+    @Needs(.layout, .display)
+    var progress: CGFloat = 0
+    
+    var setNeedsDisplayCount: Int = 0
+    
+    override func setNeedsDisplay(_ rect: CGRect) {
+        super.setNeedsDisplay(rect)
+        setNeedsDisplayCount += 1
+    }
+}
+
+#endif
+
 class NeedsTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        //// XCTAssertEqual(Needs().text, "Hello, World!")
+    func testNeeds() {
+        let sut = View()
+        XCTAssertEqual(sut.setNeedsDisplayCount, 0)
+
+        sut.progress = 0.5
+        XCTAssertEqual(sut.setNeedsDisplayCount, 1)
+
+        sut.progress = 0.5
+        XCTAssertEqual(sut.setNeedsDisplayCount, 1)
+        
+        sut.progress = 1
+        XCTAssertEqual(sut.setNeedsDisplayCount, 2)
     }
     
     static var allTests = [
-        ("testExample", testExample),
+        ("testNeeds", testNeeds),
     ]
 }
