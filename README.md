@@ -24,6 +24,37 @@ Add a `Needs` property wrapper to one of your properties to call automatically t
 var progress: CGFloat = 0
 ```
 
+## Available _needs_
+
+#### [`UIView`](/Sources/Need+UIView.swift)
+```swift
+.display            // self.setNeedsDisplay()
+.layout             // self.setNeedsLayout()
+.updateConstraints  // self.setNeedsUpdateConstraints()
+.focusUpdate        // self.setNeedsFocusUpdate()
+```
+
+#### [`UIViewController`](/Sources/Need+UIViewController.swift)
+```swift
+.statusBarAppearanceUpdate                    // self.setNeedsStatusBarAppearanceUpdate()
+.updateOfHomeIndicatorAutoHidden              // self.setNeedsUpdateOfHomeIndicatorAutoHidden()
+.updateOfScreenEdgesDeferringSystemGestures   // self.setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
+.updateOfPrefersPointerLocked                 // self.setNeedsUpdateOfPrefersPointerLocked()
+.userInterfaceAppearanceUpdate                // self.setNeedsUserInterfaceAppearanceUpdate()
+.focusUpdate                                  // self.setNeedsFocusUpdate()
+.viewDisplay                                  // self.viewIfLoaded?.setNeedsDisplay()
+.viewLayout                                   // self.viewIfLoaded?.setNeedsLayout()
+.updateViewConstraints                        // self.viewIfLoaded?.setNeedsUpdateConstraints()
+.reloadData                                   // self.tableView.reloadData()
+```
+
+#### [`NSView`](/Sources/Need+NSView.swift)
+```swift
+.display           // self.setNeedsDisplay($0.bounds)
+.layout            // self.needsLayout = true
+.updateConstraints // self.needsUpdateConstraints = true
+```
+
 ## Author
 
 [Jérôme Alves](https://twitter.com/jegnux)
