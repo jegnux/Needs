@@ -21,6 +21,9 @@
 		750AE69725937ECA00A878F7 /* Need+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AE69425937ECA00A878F7 /* Need+UIViewController.swift */; };
 		750AE69825937ECA00A878F7 /* Need+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AE69425937ECA00A878F7 /* Need+UIViewController.swift */; };
 		750AE6A2259389D400A878F7 /* Need+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AE6A0259389D400A878F7 /* Need+NSView.swift */; };
+		75A72E632593DD1100E0C65A /* Need+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AE6A0259389D400A878F7 /* Need+NSView.swift */; };
+		75A72E6B2593DD1200E0C65A /* Need+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AE6A0259389D400A878F7 /* Need+NSView.swift */; };
+		75A72E732593DD1200E0C65A /* Need+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750AE6A0259389D400A878F7 /* Need+NSView.swift */; };
 		8933C7851EB5B820000D00A4 /* Needs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Needs.swift */; };
 		8933C7861EB5B820000D00A4 /* Needs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Needs.swift */; };
 		8933C7871EB5B820000D00A4 /* Needs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Needs.swift */; };
@@ -482,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				750AE68925937E9800A878F7 /* Need+UIView.swift in Sources */,
+				75A72E632593DD1100E0C65A /* Need+NSView.swift in Sources */,
 				8933C7851EB5B820000D00A4 /* Needs.swift in Sources */,
 				750AE69525937ECA00A878F7 /* Need+UIViewController.swift in Sources */,
 				750AE67D25937E8500A878F7 /* Need.swift in Sources */,
@@ -501,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				750AE68B25937E9800A878F7 /* Need+UIView.swift in Sources */,
+				75A72E6B2593DD1200E0C65A /* Need+NSView.swift in Sources */,
 				8933C7871EB5B820000D00A4 /* Needs.swift in Sources */,
 				750AE69725937ECA00A878F7 /* Need+UIViewController.swift in Sources */,
 				750AE67F25937E8500A878F7 /* Need.swift in Sources */,
@@ -512,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				750AE68C25937E9800A878F7 /* Need+UIView.swift in Sources */,
+				75A72E732593DD1200E0C65A /* Need+NSView.swift in Sources */,
 				8933C7881EB5B820000D00A4 /* Needs.swift in Sources */,
 				750AE69825937ECA00A878F7 /* Need+UIViewController.swift in Sources */,
 				750AE68025937E8500A878F7 /* Need.swift in Sources */,

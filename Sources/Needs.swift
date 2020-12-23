@@ -9,7 +9,7 @@
 import Foundation
 
 @propertyWrapper
-public struct Needs<EnclosingSelf: AnyObject, T> where T: Equatable{
+public struct Needs<EnclosingSelf: AnyObject, T> where T: Equatable {
     
     public var wrappedValue: T
     
